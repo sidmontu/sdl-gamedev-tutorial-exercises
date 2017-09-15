@@ -1,7 +1,7 @@
 # Simple DirectMedia Layer (SDL) -- C++ Projects
-# SDL Gamedev Tutorial Exercises
+# SDL Gamedev Tutorial Exercises (Uses SDL2)
 
-Source: http://www.lazyfoo.net/SDL_tutorials/
+Source: http://lazyfoo.net/tutorials/SDL/index.php
 
 Just going through each tutorial one at a time slowly..
 
@@ -9,3 +9,8 @@ Just going through each tutorial one at a time slowly..
 Each tutorial is self-contained. Type make tutorial-<number> to compile the project. <number> is a 2-digit numeral. E.g. to compile tutorial 1, type `make tutorial-01`. The compiled executable is stored in ./bin/ directory, and can be run by typing `./bin/tutorial-<number>`.
 
 I try and comment and innovate a little here and there on the side, but largely follow the tutorial. Full credit to Lazy Foo' Productions for tutorial and code chunks.
+
+## Dependencies
+
+You must have SDL2 installed. For Linux, `apt-get install libsdl2-dev` should suffice, for macOS, `brew install sdl2` should work. You might have to update INCLUDE and LIB flags to compile properly for your environment inside the Makefile. Run `sdl2-config --cflags --libs` to see the include and library paths that you would need to append to compile the C++ projects.
+

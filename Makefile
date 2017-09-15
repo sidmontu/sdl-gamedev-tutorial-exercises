@@ -11,7 +11,7 @@ endif
 
 all: tutorial-01 tutorial-02
 
-tutorial-01: tutorial_01/main.cpp tutorial_01/hello.bmp
+tutorial-01: tutorial_01/main.cpp
 	@mkdir -p bin
 	@g++ -o./bin/$@ $(INCLUDE_FLAGS) tutorial_01/main.cpp $(LIB_FLAGS)
 
