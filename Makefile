@@ -1,7 +1,7 @@
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Linux)
-	LIB_FLAGS				:= -lSDL2
-	INCLUDE_FLAGS			:= 
+	LIB_FLAGS				:= -L/usr/lib/x86_64-linux-gnu -lSDL2
+	INCLUDE_FLAGS			:= -I/usr/include/SDL2 -D_REENTRANT 
 endif
 ifeq ($(UNAME_S),Darwin)
 	INCLUDE_FLAGS			:= -I/opt/local/include/SDL2 -I/opt/local/include -D_THREAD_SAFE 
