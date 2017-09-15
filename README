@@ -1,0 +1,11 @@
+# Simple DirectMedia Layer (SDL) -- C++ Projects
+# SDL Gamedev Tutorial Exercises
+
+Source: http://www.lazyfoo.net/SDL_tutorials/
+
+Just going through each tutorial one at a time slowly..
+
+## Usage
+Each tutorial is self-contained. Type make tutorial-<number> to compile the project. <number> is a 2-digit numeral. E.g. to compile tutorial 1, type `make tutorial-01`. The compiled executable is stored in ./bin/ directory, and can be run by typing `./bin/tutorial-<number>`.
+
+I try and comment and innovate a little here and there on the side, but largely follow the tutorial. Full credit to Lazy Foo' Productions for tutorial and code chunks.
